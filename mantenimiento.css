@@ -46,24 +46,24 @@ body{
     border-radius: 50%;    
 }
 
-@media only screen and (max-width: 768px){
-    #titulo{
+@media only screen and (max-width: 768px) {
+    #titulo {
         font-size: 40px;
     }
-    .principal{
+    .principal {
         margin-left: 10px;
         margin-right: 10px;
         padding: 15px;
     }
-    #subtitulo{
+    #subtitulo {
         font-size: 30px;
     }
-    .novedades{
+    .novedades {
         font-size: 25px;
         margin-left: 10px;
         margin-right: 10px;
     }
-    #noche{
+    #noche {
         width: 40px;
         height: 40px;
     }
