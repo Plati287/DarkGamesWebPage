@@ -1,5 +1,5 @@
 #titulo{
-    color: rgb(11, 4, 31);
+    color: rgb(42, 34, 65);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 80px;
@@ -46,25 +46,54 @@ body{
     border-radius: 50%;    
 }
 
+/* Media queries para dispositivos móviles */
 @media only screen and (max-width: 768px) {
     #titulo {
-        font-size: 40px;
+        font-size: 40px; /* Reducir tamaño de título */
     }
+
     .principal {
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 15px;
+        margin: 10px; /* Ajustar márgenes */
+        padding: 15px; /* Reducir padding */
     }
+
     #subtitulo {
-        font-size: 30px;
+        font-size: 30px; /* Reducir tamaño del subtítulo */
     }
+
     .novedades {
-        font-size: 25px;
-        margin-left: 10px;
-        margin-right: 10px;
+        font-size: 25px; /* Ajustar tamaño de texto */
+        margin: 10px; /* Reducir márgenes */
     }
+
     #noche {
         width: 40px;
         height: 40px;
     }
 }
+
+/* Media query para pantallas muy pequeñas (como algunos teléfonos) */
+@media only screen and (max-width: 480px) {
+    #titulo {
+        font-size: 32px; /* Ajuste aún mayor en móviles pequeños */
+    }
+
+    .principal {
+        padding: 10px; /* Reducir padding aún más */
+    }
+
+    #subtitulo {
+        font-size: 24px; /* Ajuste tamaño del subtítulo */
+    }
+
+    .novedades {
+        font-size: 20px; /* Ajuste tamaño de texto para pantallas pequeñas */
+        padding: 10px;
+    }
+
+    #noche {
+        width: 30px;
+        height: 30px;
+    }
+}
+
