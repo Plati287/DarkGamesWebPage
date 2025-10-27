@@ -46,24 +46,24 @@ body{
     border-radius: 50%;    
 }
 
-/* Media queries para dispositivos móviles */
+
 @media only screen and (max-width: 768px) {
     #titulo {
-        font-size: 40px; /* Reducir tamaño de título */
+        font-size: 40px; 
     }
 
     .principal {
-        margin: 10px; /* Ajustar márgenes */
-        padding: 15px; /* Reducir padding */
+        margin: 10px; 
+        padding: 15px; 
     }
 
     #subtitulo {
-        font-size: 30px; /* Reducir tamaño del subtítulo */
+        font-size: 30px; 
     }
 
     .novedades {
-        font-size: 25px; /* Ajustar tamaño de texto */
-        margin: 10px; /* Reducir márgenes */
+        font-size: 25px; 
+        margin: 10px; 
     }
 
     #noche {
@@ -72,22 +72,22 @@ body{
     }
 }
 
-/* Media query para pantallas muy pequeñas (como algunos teléfonos) */
+
 @media only screen and (max-width: 480px) {
     #titulo {
-        font-size: 32px; /* Ajuste aún mayor en móviles pequeños */
+        font-size: 32px; 
     }
 
     .principal {
-        padding: 10px; /* Reducir padding aún más */
+        padding: 10px; 
     }
 
     #subtitulo {
-        font-size: 24px; /* Ajuste tamaño del subtítulo */
+        font-size: 24px; 
     }
 
     .novedades {
-        font-size: 20px; /* Ajuste tamaño de texto para pantallas pequeñas */
+        font-size: 20px; 
         padding: 10px;
     }
 
