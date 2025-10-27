@@ -3,7 +3,6 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 80px;
-    
 }
 .principal{
     background-color: rgb(213, 209, 209);
@@ -14,11 +13,10 @@
     margin-right: 200px;
     border: 2.5px solid rgba(0, 0, 0, 0.629);
     border-radius: 15px;
-    padding: 40px;
+    padding: 50px;
 }
 body{
     background-color: rgba(255, 255, 255, 0.808);
-
 }
 #subtitulo{
     text-align: center;
@@ -36,10 +34,6 @@ body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
     box-shadow: 10px 10px 15px rgba(177, 5, 5, 0.2);
-
-    
-
-    
 }
 #noche {
     position: fixed;        
@@ -50,4 +44,27 @@ body{
     cursor: pointer;       
     z-index: 1000;         
     border-radius: 50%;    
+}
+
+@media only screen and (max-width: 768px){
+    #titulo{
+        font-size: 40px;
+    }
+    .principal{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 15px;
+    }
+    #subtitulo{
+        font-size: 30px;
+    }
+    .novedades{
+        font-size: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #noche{
+        width: 40px;
+        height: 40px;
+    }
 }
