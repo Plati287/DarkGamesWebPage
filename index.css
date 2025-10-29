@@ -96,6 +96,11 @@ body{
         width: 30px;
         height: 30px;
     }
+    #release {
+        margin: 10px;
+        font-size:15px;
+
+    }
 }
 
 #release{
@@ -117,3 +122,4 @@ body{
   text-align: center;
   
 }
+
