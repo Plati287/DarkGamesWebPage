@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mantenimiento.css">
+</head>
+<body>
+    <div class="principal">
+        <h1 id="titulo">Maintenance!</h1>
+        <h2 id="subtitulo"></h2>
+        <div class="novedades">
+            <p id="novedad">You'll be able to see all the latest news about my games!</p>
+            <p id="novedad">Many more advantages! Coming soon</p>
+            <div class="contador">
+                <p id="release"> </p> 
+            </div>
+        </div>
+    </div>
+    
+    <img id="noche" src="NOCHE.png" alt="Cambiar fondo" onclick="toggleFondo()">
+
+    <script>
+        function toggleFondo() {
+            if (document.body.style.backgroundColor === "black") {
+                document.body.style.backgroundColor = "white";
+            } else {
+                document.body.style.backgroundColor = "black";
+            }
+        }
+
+        const targetDate = new Date("November 1, 2025 23:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeLeft = targetDate - now;
+
+            if (timeLeft <= 0) {
+                document.getElementById("release").innerHTML = "The Dark Games page has been released!";
+                return;
+            }
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById("release").innerHTML = `Coming Soon! ${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
