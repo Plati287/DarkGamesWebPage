@@ -15,8 +15,9 @@
     border: 2.5px solid rgba(0, 0, 0, 0.629);
     border-radius: 15px;
     padding: 50px;
-    position: relative; /* Permite que los elementos dentro se posicionen en relación a este contenedor */
+    position: relative;
 }
+
 body{
     background-color: rgba(255, 255, 255, 0.808);
     transition: background-color 0.3s ease;
@@ -32,6 +33,7 @@ body{
     font-size: 30px;
     box-shadow: 10px 10px 15px rgba(177, 5, 5, 0.2);
 }
+
 #noche { /*modo noche*/
     position: fixed;        
     top: 20px;             
@@ -45,19 +47,19 @@ body{
 
 .actu { /* contenedor actualizacion general*/
     background-color: rgb(229, 139, 14);
-    margin-left: 0; /* Sin margen a la izquierda */
-    margin-right: 0; /* Sin margen a la derecha */
+    margin-left: 0;
+    margin-right: 0;
     border: 2.5px solid rgba(12, 12, 12, 0.629);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
     box-shadow: 10px 10px 15px rgba(177, 5, 5, 0.2);
-    position: absolute; /* Posición absoluta respecto al contenedor .principal */
-    top: 200px; /* Pegado al borde superior de .principal */
-    right: 30px; /* Pegado al borde derecho de .principal */
-    left: 1200px ;
-    padding: 5px; /* Puedes ajustar este padding según tus necesidades */
-
+    position: absolute;
+    top: 200px;
+    right: 30px;
+    left: 1200px;
+    padding: 5px;
 }
+
 .contenido{ /*contenido actualizacion*/
     background-color: rgb(207, 144, 68);
     font-size: 25px;
@@ -72,77 +74,318 @@ body{
 #release{ /*texto contador*/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-
 }
+
 .contador {  /* contenedor tiempo restante contador */
-  background-color: rgb(0, 0, 0);
-  border-radius: 15px;
-  margin-left: 50px;
-  margin-right: 60px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  border: 5px solid rgba(194, 20, 20, 0.629);
-  box-shadow: 35px 35px 35px 35px rgba(251, 255, 2, 0.2);
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  
-} 
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-right: 60px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: 5px solid rgba(194, 20, 20, 0.629);
+    box-shadow: 35px 35px 35px 35px rgba(251, 255, 2, 0.2);
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
 
-
-
-@media only screen and (max-width: 768px) {
-    #titulo {
-        font-size: 40px; 
-    }
-
+/* PANTALLAS GRANDES (Monitores 1920px+) */
+@media only screen and (min-width: 1600px) {
     .principal {
-        margin: 10px; 
-        padding: 15px; 
+        margin-left: 250px;
+        margin-right: 250px;
     }
-
-    #subtitulo {
-        font-size: 30px; 
-    }
-
+    
     .novedades {
-        font-size: 25px; 
-        margin: 10px; 
+        margin-left: 350px;
+        margin-right: 350px;
     }
+}
 
+/* PORTÁTILES GRANDES (1400px - 1599px) */
+@media only screen and (max-width: 1599px) {
+    .principal {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    
+    .actu {
+        left: 1000px;
+        right: 20px;
+    }
+    
+    .novedades {
+        margin-left: 200px;
+        margin-right: 280px;
+    }
+}
+
+/* PORTÁTILES MEDIANOS (1200px - 1399px) */
+@media only screen and (max-width: 1399px) {
+    #titulo {
+        font-size: 70px;
+    }
+    
+    .principal {
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 40px;
+    }
+    
+    .actu {
+        left: 850px;
+        right: 20px;
+        font-size: 26px;
+    }
+    
+    .novedades {
+        margin-left: 150px;
+        margin-right: 250px;
+        font-size: 28px;
+    }
+    
+    .contenido {
+        font-size: 22px;
+    }
+}
+
+/* PORTÁTILES PEQUEÑOS (1024px - 1199px) */
+@media only screen and (max-width: 1199px) {
+    #titulo {
+        font-size: 60px;
+    }
+    
+    .principal {
+        margin-left: 60px;
+        margin-right: 60px;
+        padding: 30px;
+    }
+    
+    .actu {
+        left: 700px;
+        right: 15px;
+        font-size: 24px;
+        padding: 8px;
+    }
+    
+    .novedades {
+        margin-left: 80px;
+        margin-right: 200px;
+        font-size: 26px;
+    }
+    
+    #actu_titulo {
+        font-size: 26px;
+    }
+    
+    .contador {
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 26px;
+    }
+}
+
+/* TABLETS HORIZONTALES (768px - 1023px) - Columna con Updates arriba */
+@media only screen and (max-width: 1023px) {
+    #titulo {
+        font-size: 55px;
+    }
+    
+    .principal {
+        margin: 30px;
+        padding: 25px;
+        flex-direction: column;
+    }
+    
+    /* Updates arriba del todo */
+    .actu {
+        position: static;
+        width: auto;
+        margin: 0 0 30px 0;
+        left: auto;
+        right: auto;
+        top: auto;
+        order: -1;
+        font-size: 26px;
+    }
+    
+    .novedades {
+        margin: 0;
+        font-size: 26px;
+        order: 1;
+    }
+    
+    .contador {
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 26px;
+    }
+    
+    #noche {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* TABLETS VERTICALES (600px - 767px) */
+@media only screen and (max-width: 767px) {
+    #titulo {
+        font-size: 45px;
+    }
+    
+    .principal {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .actu {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    
+    .contenido {
+        font-size: 20px;
+    }
+    
+    #actu_titulo {
+        font-size: 24px;
+    }
+    
+    .novedades {
+        font-size: 22px;
+        padding: 15px;
+    }
+    
+    .contador {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 22px;
+    }
+    
+    #noche {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+/* MÓVILES GRANDES (481px - 599px) */
+@media only screen and (max-width: 599px) {
+    #titulo {
+        font-size: 38px;
+    }
+    
+    .principal {
+        margin: 15px;
+        padding: 18px;
+    }
+    
+    .actu {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .contenido {
+        font-size: 18px;
+    }
+    
+    #actu_titulo {
+        font-size: 22px;
+    }
+    
+    .novedades {
+        font-size: 20px;
+        padding: 12px;
+    }
+    
+    .contador {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+}
+
+/* MÓVILES PEQUEÑOS (≤480px) */
+@media only screen and (max-width: 480px) {
+    #titulo {
+        font-size: 32px;
+    }
+    
+    .principal {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .actu {
+        font-size: 20px;
+        margin-bottom: 18px;
+        padding: 8px;
+    }
+    
+    .contenido {
+        font-size: 16px;
+    }
+    
+    #actu_titulo {
+        font-size: 20px;
+    }
+    
+    .novedades {
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    .contador {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    
+    #release {
+        font-size: 16px;
+    }
+    
     #noche {
         width: 40px;
         height: 40px;
     }
 }
 
-
-@media only screen and (max-width: 480px) {
+/* MÓVILES MUY PEQUEÑOS (≤360px) */
+@media only screen and (max-width: 360px) {
     #titulo {
-        font-size: 32px; 
+        font-size: 28px;
     }
-
+    
     .principal {
-        padding: 10px; 
+        margin: 8px;
+        padding: 12px;
     }
-
-    #subtitulo {
-        font-size: 24px; 
+    
+    .actu {
+        font-size: 18px;
     }
-
+    
+    .contenido {
+        font-size: 15px;
+    }
+    
+    #actu_titulo {
+        font-size: 18px;
+    }
+    
     .novedades {
-        font-size: 20px; 
-        padding: 10px;
+        font-size: 16px;
     }
-
+    
+    .contador {
+        font-size: 16px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
     #noche {
-        width: 30px;
-        height: 30px;
-    }
-    #release {
-        margin: 10px;
-        font-size:15px;
-
+        width: 35px;
+        height: 35px;
     }
 }
-
