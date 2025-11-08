@@ -57,12 +57,12 @@ body{
     top: 200px;
     right: 30px;
     left: 1200px;
-    padding: 5px;
+    padding: 1px;
 }
 
 .contenido{
     background-color: rgb(207, 144, 68);
-    font-size: 25px;
+    font-size: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
@@ -89,300 +89,50 @@ body{
     color: white;
     text-align: center;
 }
-
-
-@media only screen and (min-width: 1600px) {
-    .principal {
-        margin-left: 250px;
-        margin-right: 250px;
-    }
-    
-    .novedades {
-        margin-left: 350px;
-        margin-right: 350px;
-    }
+/* novedades */
+#actu_titulo2{ 
+    text-align: left;
+    font-size: 20px;
+}
+.contenido2{
+    background-color: rgb(207, 144, 68);
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+.actu2 { 
+    background-color: rgb(229, 139, 14);
+    margin-left: 0;
+    margin-right: 0;
+    border: 2.5px solid rgba(12, 12, 12, 0.629);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    box-shadow: 10px 10px 15px rgba(177, 5, 5, 0.2);
+    position: absolute;
+    top: 200px;
+    right: 1200px;
+    left: 30px;
+    padding: 5px;
 }
 
-
-@media only screen and (max-width: 1599px) {
-    .principal {
-        margin-left: 150px;
-        margin-right: 150px;
-    }
-    
-    .actu {
-        left: 1000px;
-        right: 20px;
-    }
-    
-    .novedades {
-        margin-left: 200px;
-        margin-right: 280px;
-    }
+#discord { 
+    position: fixed;        
+    top: 20px;             
+    left: 20px;            
+    width: 50px;           
+    height: 50px;         
+    cursor: pointer;       
+    z-index: 1000;         
 }
 
-
-@media only screen and (max-width: 1399px) {
-    #titulo {
-        font-size: 70px;
-    }
-    
-    .principal {
-        margin-left: 100px;
-        margin-right: 100px;
-        padding: 40px;
-    }
-    
-    .actu {
-        left: 850px;
-        right: 20px;
-        font-size: 26px;
-    }
-    
-    .novedades {
-        margin-left: 150px;
-        margin-right: 250px;
-        font-size: 28px;
-    }
-    
-    .contenido {
-        font-size: 22px;
-    }
+#yt { 
+    position: fixed;        
+    top: 20px;             
+    left: 90px;            
+    width: 70px;           
+    height: 50px;         
+    cursor: pointer;       
+    z-index: 1000;         
 }
 
-/* PORTÁTILES PEQUEÑOS (1024px - 1199px) */
-@media only screen and (max-width: 1199px) {
-    #titulo {
-        font-size: 60px;
-    }
-    
-    .principal {
-        margin-left: 60px;
-        margin-right: 60px;
-        padding: 30px;
-    }
-    
-    .actu {
-        left: 700px;
-        right: 15px;
-        font-size: 24px;
-        padding: 8px;
-    }
-    
-    .novedades {
-        margin-left: 80px;
-        margin-right: 200px;
-        font-size: 26px;
-    }
-    
-    #actu_titulo {
-        font-size: 26px;
-    }
-    
-    .contador {
-        margin-left: 30px;
-        margin-right: 30px;
-        font-size: 26px;
-    }
-}
-
-/* TABLETS HORIZONTALES (768px - 1023px) - Columna con Updates arriba */
-@media only screen and (max-width: 1023px) {
-    #titulo {
-        font-size: 55px;
-    }
-    
-    .principal {
-        margin: 30px;
-        padding: 25px;
-        flex-direction: column;
-    }
-    
-    /* Updates arriba del todo */
-    .actu {
-        position: static;
-        width: auto;
-        margin: 0 0 30px 0;
-        left: auto;
-        right: auto;
-        top: auto;
-        order: -1;
-        font-size: 26px;
-    }
-    
-    .novedades {
-        margin: 0;
-        font-size: 26px;
-        order: 1;
-    }
-    
-    .contador {
-        margin-left: 30px;
-        margin-right: 30px;
-        font-size: 26px;
-    }
-    
-    #noche {
-        width: 45px;
-        height: 45px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    #titulo {
-        font-size: 45px;
-    }
-    
-    .principal {
-        margin: 20px;
-        padding: 20px;
-    }
-    
-    .actu {
-        font-size: 24px;
-        margin-bottom: 25px;
-    }
-    
-    .contenido {
-        font-size: 20px;
-    }
-    
-    #actu_titulo {
-        font-size: 24px;
-    }
-    
-    .novedades {
-        font-size: 22px;
-        padding: 15px;
-    }
-    
-    .contador {
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 22px;
-    }
-    
-    #noche {
-        width: 42px;
-        height: 42px;
-    }
-}
-
-@media only screen and (max-width: 599px) {
-    #titulo {
-        font-size: 38px;
-    }
-    
-    .principal {
-        margin: 15px;
-        padding: 18px;
-    }
-    
-    .actu {
-        font-size: 22px;
-        margin-bottom: 20px;
-    }
-    
-    .contenido {
-        font-size: 18px;
-    }
-    
-    #actu_titulo {
-        font-size: 22px;
-    }
-    
-    .novedades {
-        font-size: 20px;
-        padding: 12px;
-    }
-    
-    .contador {
-        margin-left: 15px;
-        margin-right: 15px;
-        font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    #titulo {
-        font-size: 32px;
-    }
-    
-    .principal {
-        margin: 10px;
-        padding: 15px;
-    }
-    
-    .actu {
-        font-size: 20px;
-        margin-bottom: 18px;
-        padding: 8px;
-    }
-    
-    .contenido {
-        font-size: 16px;
-    }
-    
-    #actu_titulo {
-        font-size: 20px;
-    }
-    
-    .novedades {
-        font-size: 18px;
-        padding: 10px;
-    }
-    
-    .contador {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 18px;
-    }
-    
-    #release {
-        font-size: 16px;
-    }
-    
-    #noche {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-@media only screen and (max-width: 360px) {
-    #titulo {
-        font-size: 28px;
-    }
-    
-    .principal {
-        margin: 8px;
-        padding: 12px;
-    }
-    
-    .actu {
-        font-size: 18px;
-    }
-    
-    .contenido {
-        font-size: 15px;
-    }
-    
-    #actu_titulo {
-        font-size: 18px;
-    }
-    
-    .novedades {
-        font-size: 16px;
-    }
-    
-    .contador {
-        font-size: 16px;
-        margin-left: 8px;
-        margin-right: 8px;
-    }
-    
-    #noche {
-        width: 35px;
-        height: 35px;
-    }
-}
 
