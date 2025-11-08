@@ -1,0 +1,280 @@
+/* ===== PANTALLAS GRANDES (Monitores grandes, TVs) ===== */
+@media (min-width: 1920px) {
+    #titulo {
+        font-size: 90px;
+    }
+    
+    .principal {
+        max-width: 1600px;
+        padding: 60px;
+    }
+    
+    .novedades {
+        font-size: 35px;
+    }
+}
+
+/* ===== PANTALLAS MEDIANAS-GRANDES (Portátiles, monitores estándar) ===== */
+@media (max-width: 1400px) {
+    .principal {
+        margin-left: 100px;
+        margin-right: 100px;
+        width: auto;
+    }
+    
+    .novedades {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    
+    .actu {
+        left: 900px;
+        right: 20px;
+    }
+    
+    .actu2 {
+        right: 900px;
+    }
+}
+
+/* ===== TABLETS HORIZONTAL Y PORTÁTILES PEQUEÑOS ===== */
+@media (max-width: 1024px) {
+    #titulo {
+        font-size: 60px;
+    }
+    
+    .principal {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 30px;
+    }
+    
+    .novedades {
+        margin-left: 100px;
+        margin-right: 100px;
+        font-size: 25px;
+    }
+    
+    .actu {
+        position: static;
+        margin: 20px 0;
+        left: auto;
+        right: auto;
+    }
+    
+    .actu2 {
+        position: static;
+        margin: 20px 0;
+        left: auto;
+        right: auto;
+    }
+    
+    .contador {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 25px;
+    }
+}
+
+/* ===== TABLETS VERTICAL ===== */
+@media (max-width: 768px) {
+    #titulo {
+        font-size: 45px;
+    }
+    
+    .principal {
+        margin: 50px 30px;
+        padding: 25px;
+    }
+    
+    .novedades {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 22px;
+    }
+    
+    .actu, .actu2 {
+        font-size: 25px;
+        padding: 10px;
+    }
+    
+    .contenido, .contenido2 {
+        font-size: 18px;
+    }
+    
+    #actu_titulo {
+        font-size: 25px;
+    }
+    
+    #noche, #discord {
+        width: 45px;
+        height: 45px;
+    }
+    
+    #yt {
+        width: 60px;
+        height: 45px;
+        left: 75px;
+    }
+    
+    .contador {
+        font-size: 22px;
+        margin: 10px 10px 20px;
+    }
+}
+
+/* ===== MÓVILES HORIZONTAL ===== */
+@media (max-width: 640px) {
+    #titulo {
+        font-size: 35px;
+        padding: 15px;
+    }
+    
+    .principal {
+        margin: 30px 20px;
+        padding: 20px;
+        margin-top: 80px;
+    }
+    
+    .novedades {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    .actu, .actu2 {
+        font-size: 22px;
+        padding: 8px;
+        margin: 15px 0;
+    }
+    
+    .contenido, .contenido2 {
+        font-size: 16px;
+    }
+    
+    #actu_titulo {
+        font-size: 22px;
+    }
+    
+    #actu_titulo2 {
+        font-size: 18px;
+    }
+}
+
+/* ===== MÓVILES VERTICAL (Smartphones) ===== */
+@media (max-width: 480px) {
+    #titulo {
+        font-size: 28px;
+        padding: 10px;
+    }
+    
+    .principal {
+        margin: 20px 10px;
+        padding: 15px;
+        margin-top: 70px;
+        border-radius: 10px;
+    }
+    
+    .novedades {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 18px;
+        padding: 8px;
+    }
+    
+    .actu, .actu2 {
+        font-size: 20px;
+        padding: 5px;
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+    
+    .contenido, .contenido2 {
+        font-size: 14px;
+    }
+    
+    #actu_titulo {
+        font-size: 20px;
+    }
+    
+    #actu_titulo2 {
+        font-size: 16px;
+    }
+    
+    #noche, #discord {
+        width: 35px;
+        height: 35px;
+        top: 15px;
+    }
+    
+    #noche {
+        right: 15px;
+    }
+    
+    #discord {
+        left: 15px;
+    }
+    
+    #yt {
+        width: 50px;
+        height: 35px;
+        left: 60px;
+        top: 15px;
+    }
+    
+    .contador {
+        font-size: 18px;
+        margin: 10px 5px 15px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 15px 15px 15px 15px rgba(251, 255, 2, 0.2);
+    }
+    
+    #release {
+        font-size: 16px;
+    }
+}
+
+/* ===== MÓVILES MUY PEQUEÑOS ===== */
+@media (max-width: 360px) {
+    #titulo {
+        font-size: 24px;
+    }
+    
+    .principal {
+        padding: 12px;
+        margin: 15px 8px;
+    }
+    
+    .novedades {
+        font-size: 16px;
+        margin: 0 5px 15px;
+    }
+    
+    .actu, .actu2 {
+        font-size: 18px;
+    }
+    
+    .contenido, .contenido2 {
+        font-size: 13px;
+    }
+    
+    .contador {
+        font-size: 16px;
+        padding: 8px;
+    }
+    
+    #noche, #discord {
+        width: 30px;
+        height: 30px;
+        top: 10px;
+    }
+    
+    #yt {
+        width: 45px;
+        height: 30px;
+        left: 50px;
+        top: 10px;
+    }
+}
